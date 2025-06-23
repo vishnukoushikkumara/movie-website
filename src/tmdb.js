@@ -25,6 +25,8 @@ export const searchMovies = async (query, page = 1) => {
       overview: movie.overview,
       vote_average: movie.vote_average,
       vote_count: movie.vote_count,
+      backdrop_path: movie.backdrop_path ? `https://image.tmdb.org/t/p/w1280${movie.backdrop_path}` : null,
+      tagline: movie.tagline || '',
     }));
   } catch (error) {
     console.error('Error searching movies:', error);
