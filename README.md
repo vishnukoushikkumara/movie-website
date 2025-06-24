@@ -50,7 +50,7 @@ A dedicated `screenshots/` folder has been added to this repository containing 7
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/vishnukoushikkumara/movie-website.git
    cd movie-website
    ```
 2. **Install dependencies:**
