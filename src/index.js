@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL || '/movie-website'}>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/movie/:id" element={<MovieDetails />} />
