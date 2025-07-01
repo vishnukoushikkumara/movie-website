@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from './SearchBar';
 import MovieCard from './MovieCard';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [trending, setTrending] = useState([]);
@@ -142,7 +143,7 @@ function App() {
       <div className="movie-row-title">{title}</div>
       <div className="movie-row-cards">
         {movies.map((movie) => (
-          <div className="movie-row-card" key={movie.id}>
+          <Link to={`/movie/${movie.id}`} className="movie-row-card" key={movie.id} style={{ textDecoration: 'none', color: 'inherit' }}>
             <img
               src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/300x450?text=No+Image'}
               alt={movie.Title}
@@ -153,7 +154,7 @@ function App() {
             {movie.vote_average && (
               <p>⭐ {movie.vote_average.toFixed(1)}/10</p>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
