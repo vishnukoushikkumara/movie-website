@@ -2,6 +2,9 @@
 
 A modern, Netflix-inspired movie discovery web app built with React. Browse trending, top-rated, and now-playing movies, search for any title, and view rich details and related suggestions—all in a cinematic, dark-themed UI.
 
+
+**Note:** The deployed app at [https://vishnukoushikkumara.github.io/movie-website](https://vishnukoushikkumara.github.io/movie-website) may not work in some regions due to restrictions from the TMDB API. If you experience issues with the site not loading or showing no data, please try accessing it using a VPN set to a supported region (such as the US or Europe). Thank you for your understanding!
+
 ---
 
 ## 🚀 Features
